@@ -134,20 +134,6 @@ ping -c 3 192.168.10.1
 # View VLAN traffic
 tcpdump -i vlan10
 ```
-
-## 📚 Best Practices
-
-1. **Documentation**
-   - Maintain detailed network diagrams
-   - Document all VLAN IDs and purposes
-   - Keep configuration backups
-
-2. **Security**
-   - Implement proper network segmentation
-   - Use restrictive firewall rules
-   - Regularly audit VLAN access
-
-3. **Management**
    - Use consistent naming conventions
    - Implement change control procedures
    - Regular configuration backups

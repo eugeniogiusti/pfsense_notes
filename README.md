@@ -73,6 +73,7 @@ IPv4 Configuration:
 - [Automatic configuration]
 ```
 
+
 ### 3. Firewall Configuration
 
 Basic rules example:
@@ -93,6 +94,11 @@ Range: 192.168.10.100 - 192.168.10.200
 Subnet: 255.255.255.0
 Gateway: [VLAN Interface IP]
 ```
+
+![image](https://github.com/user-attachments/assets/4570eed9-1acb-4e13-b555-1b107b2c1e70)
+
+![image](https://github.com/user-attachments/assets/acb514ae-034b-443c-bb68-64fdd239618c)
+
 
 ### 5. Testing and Verification
 

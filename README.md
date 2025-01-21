@@ -6,6 +6,11 @@
 Complete guide for configuring VLANs in pfSense, supporting both static and DHCP configurations.
 
 ## 📋 Table of Contents
+- [Post Installation Security Setup](#-post-installation-security-setup)
+  - [SSH Configuration](#ssh-configuration)
+  - [HTTPS Setup](#https-setup)
+  - [WAN Security](#wan-security)
+  - [DNS Configuration](#dns-configuration)
 - [Prerequisites](#prerequisites)
 - [VLAN Configuration](#vlan-configuration)
   - [VLAN Creation](#1-vlan-creation)
@@ -17,7 +22,89 @@ Complete guide for configuring VLANs in pfSense, supporting both static and DHCP
 - [Best Practices](#best-practices)
 - [Contributing](#contributing)
 
-## ⚡ Quick Start
+## 🔒 Post Installation Security Setup
+
+### SSH Configuration
+
+```plaintext
+Path: System > Advanced > Admin Access
+```
+
+**Required Steps:**
+1. Enable Secure Shell
+2. Change SSH Port from default 22
+3. Configure SSH Key Authentication (recommended)
+4. Restrict SSH access to specific IPs
+
+**Example Configuration:**
+```plaintext
+SSH Port: 2222 (or another non-standard port)
+SSH Key Authentication: Enable
+Password Authentication: Disable (if using keys)
+```
+
+### HTTPS Setup
+
+```plaintext
+Path: System > Advanced > Admin Access
+```
+
+**Configuration Steps:**
+1. Enable HTTPS for WebConfigurator
+2. Generate/Import SSL Certificate
+3. Configure HTTP Redirect to HTTPS
+4. Set HTTPS Port (default 443)
+
+**Security Recommendations:**
+```plaintext
+TLS Version: 1.2 and 1.3 only
+Strong Ciphers: Enable
+HSTS: Enable
+HTTP Redirect: Enable
+```
+
+### WAN Security
+
+```plaintext
+Path: Interfaces > WAN
+```
+
+**Block Private Networks:**
+1. Navigate to WAN interface
+2. Enable "Block private networks"
+3. Enable "Block bogon networks"
+
+**Why Important:**
+- Prevents RFC1918 traffic from entering your network
+- Blocks known-bad IP ranges
+- Reduces attack surface
+
+### DNS Configuration
+
+```plaintext
+Path: System > General Setup
+```
+
+**DNS Server Setup:**
+1. Configure primary DNS servers
+2. Uncheck "Allow DNS server list to be overridden by DHCP/PPP on WAN"
+3. Set DNS Server Override options
+
+**Example Configuration:**
+```plaintext
+DNS Servers:
+1.1.1.1 (Cloudflare)
+8.8.8.8 (Google)
+Uncheck: Allow Override by ISP
+Enable: DNS Resolution
+```
+
+**Benefits:**
+- Prevents ISP DNS hijacking
+- Maintains consistent DNS resolution
+- Improves privacy and security
+
+## ⚡ Quick Star
 
 ```bash
 # Quick command sequence

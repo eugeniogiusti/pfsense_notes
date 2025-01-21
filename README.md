@@ -105,7 +105,7 @@ Enable: DNS Resolution
 - Improves privacy and security
 
 ## ⚡ Quick Star
-
+VLAN Configuration
 ```bash
 # Quick command sequence
 1. Web UI > Interfaces > VLANs > Add

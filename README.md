@@ -19,8 +19,6 @@ Complete guide for configuring VLANs in pfSense, supporting both static and DHCP
   - [DHCP Server Setup](#4-dhcp-server-setup)
   - [Testing](#5-testing-and-verification)
 - [Troubleshooting](#troubleshooting)
-- [Best Practices](#best-practices)
-- [Contributing](#contributing)
 
 ## 🔒 Post Installation Security Setup
 
@@ -42,6 +40,8 @@ SSH Port: 2222 (or another non-standard port)
 SSH Key Authentication: Enable
 Password Authentication: Disable (if using keys)
 ```
+![image](https://github.com/user-attachments/assets/88012fee-d058-4b27-a937-9b8e8de196b6)
+
 
 ### HTTPS Setup
 
@@ -62,6 +62,7 @@ Strong Ciphers: Enable
 HSTS: Enable
 HTTP Redirect: Enable
 ```
+![image](https://github.com/user-attachments/assets/25e6228c-2031-4a4d-ac22-8f94233e4cbd)
 
 ### WAN Security
 
@@ -73,6 +74,9 @@ Path: Interfaces > WAN
 1. Navigate to WAN interface
 2. Enable "Block private networks"
 3. Enable "Block bogon networks"
+4. 
+![image](https://github.com/user-attachments/assets/bb6b88a9-2940-40bc-a895-dd165f9597ec)
+
 
 **Why Important:**
 - Prevents RFC1918 traffic from entering your network
@@ -98,6 +102,9 @@ DNS Servers:
 Uncheck: Allow Override by ISP
 Enable: DNS Resolution
 ```
+
+![image](https://github.com/user-attachments/assets/264be0eb-67de-44a5-8dda-171652f30076)
+
 
 **Benefits:**
 - Prevents ISP DNS hijacking

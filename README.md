@@ -105,7 +105,8 @@ Uncheck: Allow Override by ISP
 Enable: DNS Resolution
 ```
 
-![image](https://github.com/user-attachments/assets/264be0eb-67de-44a5-8dda-171652f30076)
+![image](https://github.com/user-attachments/assets/900f28a7-13da-4d0e-b900-f5399d553b4d)
+
 
 
 **Benefits:**

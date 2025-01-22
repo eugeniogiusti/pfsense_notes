@@ -161,12 +161,11 @@ IPv4 Configuration:
 
 ![image](https://github.com/user-attachments/assets/2626112b-f902-467c-b26f-d861b8e6052b)
 
-- Useful link: https://www.youtube.com/watch?v=NihE2u3zBlw   (configuration of VLANS in Pfsense)
+- Useful link
+- https://www.youtube.com/watch?v=NihE2u3zBlw   (configuration of VLANS in Pfsense)
 - https://youtu.be/BbRIEKuFeT8?si=onIIuPrNY6yh-K-w (VLAN Base)
 - https://youtu.be/4LKbvYdCC1I?si=bUjohgq9ziKPbiR- (VLAN Trunking)
 - https://www.youtube.com/watch?v=jkva3hbJXZE (VLAN routing)
-- https://www.youtube.com/watch?v=kBPMT3CXTfA (SW_Layer_3)
-- https://www.youtube.com/watch?v=8onkkwLJF2Y (VTP)
 
 #### 2.2 DHCP Setup
 ```plaintext

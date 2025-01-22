@@ -23,6 +23,7 @@ Complete guide for configuring VLANs in pfSense, supporting both static and DHCP
 ## 🔒 Post Installation Security Setup
 
 ### SSH Configuration
+![Uploading image.png…]()
 
 ```plaintext
 Path: System > Advanced > Admin Access
